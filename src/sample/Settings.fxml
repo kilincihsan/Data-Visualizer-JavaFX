@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="604.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Settings">
+   <top>
+      <AnchorPane prefHeight="483.0" prefWidth="604.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textCaption" layoutX="109.0" layoutY="123.0" promptText="Country Populations" text="Country Populations" />
+            <TextField fx:id="textXAxis" layoutX="109.0" layoutY="152.0" promptText="Populations" />
+            <TextField fx:id="textYAxis" layoutX="109.0" layoutY="181.0" promptText="Year" />
+            <Label layoutX="57.0" layoutY="127.0" text="Caption:" textFill="WHITE" />
+            <Label layoutX="41.0" layoutY="156.0" text="Y Axis Title:" textFill="WHITE" />
+            <Label layoutX="41.0" layoutY="185.0" text="X Axis Title:" textFill="WHITE" />
+            <Label layoutX="68.0" layoutY="214.0" text="Width:" textFill="WHITE" />
+            <Label layoutX="66.0" layoutY="244.0" text="Height:" textFill="WHITE" />
+            <Label layoutX="69.0" layoutY="274.0" text="Color:" textFill="WHITE" />
+            <TextField fx:id="textWidth" layoutX="109.0" layoutY="210.0" text="1046" />
+            <TextField fx:id="textHeight" layoutX="109.0" layoutY="240.0" prefHeight="25.0" prefWidth="70.0" text="714" />
+            <TextField fx:id="textColor" layoutX="109.0" layoutY="270.0" prefHeight="25.0" prefWidth="52.0" text="default" />
+            <Label layoutX="85.0" layoutY="35.0" text="Settings" textFill="#eaf50a">
+               <font>
+                  <Font name="High Tower Text" size="55.0" />
+               </font></Label>
+            <Button fx:id="saveButton" layoutX="213.0" layoutY="340.0" mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="45.0" prefWidth="92.0" style="-fx-background-color: #eaf50a;" text="Save">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <ImageView fitHeight="483.0" fitWidth="255.0" layoutX="359.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="496.0" fitWidth="251.0" layoutX="358.0" layoutY="-12.0">
+               <image>
+                  <Image url="@../res/1200px-NG_Yellow_Frame.svg.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </top>
+</BorderPane>

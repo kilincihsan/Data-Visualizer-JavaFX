@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1366.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <left>
+      <AnchorPane prefHeight="718.0" prefWidth="435.0" style="-fx-pref-height: 670;" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <ImageView fitHeight="800.0" fitWidth="562.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/pecker.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="800.0" fitWidth="551.0" layoutX="-1.0">
+               <image>
+                  <Image url="@../res/1200px-NG_Yellow_Frame.svg.png" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="807.0" prefWidth="899.0" style="-fx-pref-height: 650;" BorderPane.alignment="TOP_RIGHT">
+         <children>
+            <Button fx:id="lineChartButton" layoutX="40.0" layoutY="273.0" mnemonicParsing="false" onAction="#lineChartButtonAction" prefHeight="200.0" prefWidth="246.0" style="-fx-background-color: #eaf50a;">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="200.0">
+                     <image>
+                        <Image url="@../res/bkg-img.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="barChartButton" layoutX="295.0" layoutY="273.0" mnemonicParsing="false" onAction="#barChartButtonAction" prefHeight="200.0" prefWidth="246.0" style="-fx-background-color: #eaf50a;">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="200.0">
+                     <image>
+                        <Image url="@../res/barchart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="pieChartButton" layoutX="550.0" layoutY="272.0" mnemonicParsing="false" onAction="#pieChartButtonAction" prefHeight="200.0" prefWidth="246.0" style="-fx-background-color: #eaf50a;">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="200.0">
+                     <image>
+                        <Image url="@../res/pie.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="AnimatedPieChartButton" layoutX="41.0" layoutY="489.0" mnemonicParsing="false" onAction="#animatedPieChartButtonAction" prefHeight="200.0" prefWidth="246.0" style="-fx-background-color: #eaf50a;">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="200.0">
+                     <image>
+                        <Image url="@../res/animatedpie.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="216.0" layoutY="44.0" prefHeight="69.0" prefWidth="447.0" text="Data Visualizer" textFill="#eaf50a">
+               <font>
+                  <Font name="High Tower Text" size="59.0" />
+               </font>
+            </Label>
+            <Button fx:id="browseButton" layoutX="34.0" layoutY="171.0" mnemonicParsing="false" onAction="#browseButtonAction" prefHeight="39.0" prefWidth="373.0" style="-fx-background-color: #eaf50a;" text="Browse XML">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="settingsButton" layoutX="35.0" layoutY="217.0" mnemonicParsing="false" onAction="#settingsButtonAction" prefHeight="39.0" prefWidth="761.0" style="-fx-background-color: #eaf50a;" text="Settings">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="726.0" layoutY="721.0" prefHeight="86.0" prefWidth="105.0" text="v1.0" textFill="#eaf50a">
+               <font>
+                  <Font size="59.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listView" layoutX="34.0" layoutY="138.0" prefHeight="26.0" prefWidth="760.0" />
+            <Button fx:id="AnimatedLineChartButton" layoutX="296.0" layoutY="489.0" mnemonicParsing="false" onAction="#animatedLineChartButtonAction" prefHeight="200.0" prefWidth="246.0" style="-fx-background-color: #eaf50a;">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="200.0">
+                     <image>
+                        <Image url="@../res/animatedline.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="AnimatedBarChartButton" layoutX="551.0" layoutY="489.0" mnemonicParsing="false" onAction="#animatedBarChartButtonAction" prefHeight="200.0" prefWidth="246.0" style="-fx-background-color: #eaf50a;">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="200.0">
+                     <image>
+                        <Image url="@../res/animated.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="browseTXT" layoutX="414.0" layoutY="171.0" mnemonicParsing="false" onAction="#browseTXT" prefHeight="39.0" prefWidth="380.0" style="-fx-background-color: #eaf50a;" text="Browse TXT">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+
+         </children></AnchorPane>
+   </right>
+</BorderPane>

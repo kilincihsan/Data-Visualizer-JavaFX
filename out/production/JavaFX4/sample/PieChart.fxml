@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="774.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PieChartController">
+    <left>
+        <AnchorPane prefHeight="714.0" prefWidth="865.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="buttonGeneratePieChart" layoutX="400.0" layoutY="684.0" mnemonicParsing="false" onAction="#generatePieChart" prefHeight="62.0" prefWidth="65.0" text="Generate" />
+            <PieChart fx:id="pieChart" layoutX="29.0" layoutY="39.0" prefHeight="626.0" prefWidth="789.0" title="Default" />
+            <Button fx:id="buttonNext" layoutX="473.0" layoutY="703.0" mnemonicParsing="false" onAction="#nextPieChart" prefHeight="25.0" prefWidth="60.0" text="Next" />
+            <Button fx:id="buttonPrevious" layoutX="333.0" layoutY="703.0" mnemonicParsing="false" onAction="#previousPieChart" prefHeight="25.0" prefWidth="60.0" text="Previous" />
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>

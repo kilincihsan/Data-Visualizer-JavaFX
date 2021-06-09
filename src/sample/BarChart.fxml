@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BarChartController">
+    <left>
+        <AnchorPane prefHeight="714.0" prefWidth="1046.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="buttonGenerateBarChart" layoutX="641.0" layoutY="654.0" mnemonicParsing="false" onAction="#generateBarChart" text="Generate" />
+                <Label fx:id="yAxisLabel" layoutX="29.0" layoutY="21.0" text="defaultYLabel" />
+                <Label layoutX="1200.0" layoutY="647.0" text="defaultXLabel" fx:id="xAxisLabel" />
+            <BarChart fx:id="barChart" layoutX="33.0" layoutY="33.0" prefHeight="633.0" prefWidth="1305.0" title="default">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="559.0" prefWidth="315.0" BorderPane.alignment="CENTER" />
+    </right>
+</BorderPane>

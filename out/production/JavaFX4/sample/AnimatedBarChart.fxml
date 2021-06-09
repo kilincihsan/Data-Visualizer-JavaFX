@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AnimatedBarChart">
+    <left>
+        <AnchorPane prefHeight="714.0" prefWidth="1366.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="buttonGenerateBarChart" layoutX="598.0" layoutY="664.0" mnemonicParsing="false" onAction="#generateBarChart" prefHeight="25.0" prefWidth="81.0" text="Generate" />
+                <Label fx:id="yAxisLabel" layoutX="29.0" layoutY="21.0" text="defaultYLabel" />
+                <Label layoutX="1200.0" layoutY="647.0" text="defaultXLabel" fx:id="xAxisLabel" />
+                <BarChart fx:id="barChart" layoutX="33.0" layoutY="33.0" prefHeight="633.0" prefWidth="1300.0" title="default">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </BarChart>
+            <Button fx:id="buttonStart" layoutX="684.0" layoutY="664.0" mnemonicParsing="false" onAction="#startAnimatedBarChart" prefHeight="25.0" prefWidth="85.0" text="Start" />
+            <Button fx:id="buttonStop" layoutX="773.0" layoutY="664.0" mnemonicParsing="false" onAction="#stop" prefHeight="25.0" prefWidth="90.0" text="Stop" />
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="714.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+    </right>
+</BorderPane>

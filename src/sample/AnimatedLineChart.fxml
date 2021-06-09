@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AnimatedLineChart">
+    <left>
+        <AnchorPane prefHeight="714.0" prefWidth="1366.0" BorderPane.alignment="CENTER">
+            <children>
+                <LineChart fx:id="lineChart" layoutX="29.0" layoutY="14.0" prefHeight="652.0" prefWidth="1300.0" title="default">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </LineChart>
+                <Button fx:id="buttonGenerateLineChart" layoutX="498.0" layoutY="664.0" mnemonicParsing="false" onAction="#generateLineChart" prefHeight="25.0" prefWidth="140.0" text="Start" />
+                <Label fx:id="yAxisLabel" layoutX="29.0" layoutY="21.0" text="defaultYLabel" />
+                <Label layoutX="1200.0" layoutY="647.0" text="defaultXLabel" fx:id="xAxisLabel" />
+            <Button fx:id="buttonClearLineChart" layoutX="649.0" layoutY="664.0" mnemonicParsing="false" onAction="#clearLineChart" prefHeight="25.0" prefWidth="128.0" text="Clear" />
+            <Button fx:id="stopButton" layoutX="791.0" layoutY="664.0" mnemonicParsing="false" onAction="#stop" prefHeight="25.0" prefWidth="117.0" text="Stop" />
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="559.0" prefWidth="315.0" BorderPane.alignment="CENTER" />
+    </right>
+</BorderPane>
