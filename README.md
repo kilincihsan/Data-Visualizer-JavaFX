@@ -5,4 +5,6 @@
 
 ![alt text](/img/2.JPG)
 
+![alt text](/img/3.JPG)
+
 ![alt text](/img/2.gif "Logo Title Text 1")
