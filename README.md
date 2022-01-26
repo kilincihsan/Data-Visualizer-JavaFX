@@ -1,6 +1,6 @@
 # Data-Visualizer-JavaFX
 
-Data visualizer is a tool for producing visual charts by XML and TXT files.
+**Data Visualizer** is a tool for producing visual charts by XML and TXT files.
 
 ![alt text](/img/1.gif "Logo Title Text 1")
 
